@@ -14,7 +14,7 @@ try
     //提交的信息，包括用户名和密码等信息
     string postdata = "uid=" + account + "&pwd=" + password;
 
-    //抽象类的静态方法可直接调用,初始化新的WebRequest实例化web访问类  
+    //抽象类的静态方法可直接调用,初始化新的WebRequest实例化web访问类
     request = (HttpWebRequest)WebRequest.Create(loginUrl);
 
     //request.Credentials:获取或设置请求的身份验证信息;
@@ -298,6 +298,9 @@ if (folderDlg.ShowDialog() == DialogResult.OK)
 ```
 
 9. 打印及预览二维码(一个或多个)
+
+
+10. [C#将图片保存到资源文件并调用](http://blog.csdn.net/mengdong_zy/article/details/8971154)
 
 
 
