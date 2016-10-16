@@ -307,6 +307,7 @@ if (folderDlg.ShowDialog() == DialogResult.OK)
 >PS:
 1. 有想法很重要
 2. 做任何事情时，千万别去想它以后会不会给你带来什么，不然你又会陷入迷茫，无从下手
+3. [sublime text3 注册码](http://blog.sina.com.cn/s/blog_7f5571aa0102w3xq.html)
 
 
 
