@@ -126,13 +126,16 @@
 
 1. 在将节点加入集群时，执行命令 `rabbitmqctl join_cluster rabbit@centos01 --ram` 报如下错误
 
-   ![](https://raw.githubusercontent.com/bruceyu1994/image-storage/main/2021/06/30/RabbitMQ%E5%A4%9A%E6%9C%BA%E5%A4%9A%E8%8A%82%E7%82%B9%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%9801.png)
+
+![](https://gitee.com/brucefish/image-storage/raw/main/2021/06/30/RabbitMQ%E5%A4%9A%E6%9C%BA%E5%A4%9A%E8%8A%82%E7%82%B9%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%9801.png)
+
+
 
 * 解决方案
 
-  1. 确认所有服务都已经重启过
+  1. 确认每个主机的rabbitmq都已经重启过
 
-  2. 上一步骤执行后，若还是不行，将.erlang.cookie文件复制到每个服务器的用户目录下面，再次重启所有服务器，然后再确认加入集群是否正常
+  2. 上一步骤执行后，若还是不行，将.erlang.cookie文件复制到每个服务器的用户目录下面（例如：若当前是root用户，就复制到/root目录下），再次重启每个主机上的rabbitmq，然后再确认加入集群是否正常
 
      
 
